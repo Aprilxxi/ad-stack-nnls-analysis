@@ -21,11 +21,6 @@ This is intentionally a code-only repository. It contains analysis scripts, pinn
 - `examples/example_data_headers.xlsx` — header-only input template with no data rows.
 - `requirements.txt` — pinned Python dependencies.
 
-## What is not included
-
-The repository does not contain individual-level clinical data, participant identifiers, patient-level predictions, imputed participant-level datasets, fitted models, prediction caches, result spreadsheets, statistical tables, figures, manuscript results, or aggregate performance estimates.
-
-The clinical datasets are not publicly distributed because their use is governed by institutional ethics approval and privacy requirements. The repository therefore supports inspection and reuse of the computational workflow but cannot reproduce the manuscript's numerical results without appropriately authorized data.
 
 ## Environment setup
 
