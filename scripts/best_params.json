@@ -1,0 +1,73 @@
+{
+  "metric": "auc",
+  "splits": 5,
+  "val_size": 0.2,
+  "seed": 42,
+  "results": {
+    "blood_xgb": {
+      "best_params": {
+        "n_estimators": 1136,
+        "max_depth": 8,
+        "learning_rate": 0.025072614096897438,
+        "subsample": 0.6842785057467029,
+        "colsample_bytree": 0.6373198899222514,
+        "min_child_weight": 6,
+        "reg_alpha": 0.002451220839241561,
+        "reg_lambda": 1.2348914950219467,
+        "gamma": 3.747678204452575
+      },
+      "fixed_params": {
+        "random_state": 42,
+        "eval_metric": "logloss",
+        "n_jobs": -1,
+        "scale_pos_weight": 1.0
+      }
+    },
+    "blood_extratrees": {
+      "best_params": {
+        "n_estimators": 1176,
+        "max_depth": null,
+        "min_samples_split": 5,
+        "min_samples_leaf": 5,
+        "max_features": 0.90023479021561,
+        "bootstrap": true
+      },
+      "fixed_params": {
+        "class_weight": "balanced",
+        "n_jobs": -1,
+        "random_state": 42
+      }
+    },
+    "allergen_cat": {
+      "best_params": {
+        "iterations": 301,
+        "depth": 4,
+        "learning_rate": 0.01570769756382139,
+        "l2_leaf_reg": 49.53355588812134,
+        "subsample": 0.7842292893910852
+      },
+      "fixed_params": {
+        "loss_function": "Logloss",
+        "eval_metric": "AUC",
+        "class_weights": [
+          2.0,
+          0.8
+        ],
+        "random_seed": 42,
+        "verbose": 0
+      }
+    },
+    "history_logreg": {
+      "best_params": {
+        "C": 0.23703072279687015
+      },
+      "fixed_params": {
+        "penalty": "l2",
+        "solver": "liblinear",
+        "max_iter": 500,
+        "class_weight": "balanced",
+        "random_state": 42
+      }
+    }
+  }
+}

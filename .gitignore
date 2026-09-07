@@ -1,0 +1,49 @@
+# Python artefacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local data, model artefacts, and generated outputs
+*.pkl
+*.npz
+*.npy
+*.joblib
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.xls
+*.xlsx
+data/
+results/
+outputs/
+local_outputs/
+figures/
+prediction_cache_entries/
+bootstrap_raw_cache_entries/
+bootstrap_summary_cache_entries/
+catboost_info/
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.pdf
+*.docx
+
+# The only workbook intentionally tracked is the empty input-schema template.
+!examples/example_data_headers.xlsx
+
+# Manuscript-production artefacts that do not belong in the code repository
+/docx_qa*/
+/scripts/insert_nested_calibration_tracked_changes.py
+
+# Local environments and editor state
+.venv/
+venv/
+env/
+.env
+.idea/
+.vscode/
+*.log
