@@ -167,14 +167,4 @@ Classification thresholds applied externally are selected from development out-o
 
 The nested logistic recalibration analysis is a post-hoc probability-calibration analysis. Calibrator selection and fitting use development out-of-fold probabilities only. The final development-fitted mapping is then applied once to the locked external predictions.
 
-## Local outputs and privacy
 
-Several scripts generate caches, predictions, spreadsheets, and figures locally. Some primary scripts also generate patient-level prediction files as part of normal execution. These files may contain sensitive or derived participant-level information.
-
-All generated outputs must remain in protected local storage. They are excluded from version control and must not be committed, uploaded, or shared through this repository.
-
-## Code and data availability
-
-The analysis code, pinned dependencies, model configuration, and a header-only input template are provided in this repository. No clinical data, patient-level predictions, fitted-model caches, tables, figures, or numerical study results are included.
-
-Access to the underlying clinical data may be requested from the corresponding author and is subject to institutional approval, applicable ethics and privacy requirements, and an appropriate data-use agreement.
