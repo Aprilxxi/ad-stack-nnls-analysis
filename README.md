@@ -34,7 +34,7 @@ python -m pip install -r requirements.txt
 
 Activate the virtual environment using the command appropriate for your operating system before running the analyses.
 
-## Preparing private input data
+## Preparing input data
 
 Use `examples/example_data_headers.xlsx` only as a schema reference. It contains 49 model-feature headers, the binary outcome header `Asthma`, and the development-cohort screening header `病历记录数量`; it contains no observations and is not itself a runnable dataset.
 
